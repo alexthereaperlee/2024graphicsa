@@ -1,0 +1,26 @@
+# depslib dependency file v1.0
+1717054084 source:c:\users\administrator\desktop\week15-3_cmp3_mci\main.cpp
+	"CMP3_MCI.h"
+	<GLUT/glut.h>
+	<GL/glut.h>
+	<stdlib.h>
+
+1717053439 c:\users\administrator\desktop\week15-3_cmp3_mci\cmp3_mci.h
+	<string>
+	<windows.h>
+	<mmsystem.h>
+
+1426320928 c:\users\administrator\desktop\freeglut\include\gl\glut.h
+	"freeglut_std.h"
+
+1426320928 c:\users\administrator\desktop\freeglut\include\gl\freeglut_std.h
+	<windows.h>
+	<EGL/egl.h>
+	<GLES/gl.h>
+	<GLES2/gl2.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<stdlib.h>
+
