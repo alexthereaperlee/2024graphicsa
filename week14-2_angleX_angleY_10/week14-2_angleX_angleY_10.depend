@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1715794878 source:c:\users\administrator\desktop\week14-2_anglex_angley_10\glm.cpp
+1717608486 source:c:\users\administrator\desktop\week14-2_anglex_angley_10\glm.cpp
 	<math.h>
 	<stdio.h>
 	<stdlib.h>
@@ -7,7 +7,7 @@
 	<assert.h>
 	"glm.h"
 
-1715794878 c:\users\administrator\desktop\week14-2_anglex_angley_10\glm.h
+1717608486 c:\users\administrator\desktop\week14-2_anglex_angley_10\glm.h
 	<GL/glut.h>
 
 1426320928 c:\users\administrator\desktop\freeglut\include\gl\glut.h
@@ -23,4 +23,12 @@
 	<GL/gl.h>
 	<GL/glu.h>
 	<stdlib.h>
+
+1718267924 source:c:\users\administrator\desktop\week14-2_anglex_angley_10\main.cpp
+	<opencv/highgui.h>
+	<opencv/cv.h>
+	<GL/glut.h>
+	<GL/glut.h>
+	"glm.h"
+	<stdio.h>
 

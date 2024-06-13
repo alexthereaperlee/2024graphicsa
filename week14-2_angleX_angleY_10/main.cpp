@@ -1,7 +1,7 @@
 #include <opencv/highgui.h> ///使用 OpenCV 2.1 比較簡單, 只要用 High GUI 即可
 #include <opencv/cv.h>
 #include <GL/glut.h>
-
+float teapotX=0,teapotY=0;
 int myTexture(char * filename)
 {
     IplImage * img = cvLoadImage(filename); ///OpenCV讀圖
@@ -19,13 +19,14 @@ int myTexture(char * filename)
 }
 #include <GL/glut.h>
 #include "glm.h"
-GLMmodel* pmodel = NULL;
-GLMmodel* handa = NULL;
-GLMmodel* handb = NULL;
-GLMmodel* upperA = NULL;
-GLMmodel* lowerA = NULL;
+
 GLMmodel* body = NULL;
-void drawBody(void)
+GLMmodel* rightleg = NULL;
+GLMmodel* leftleg = NULL;
+GLMmodel* head = NULL;
+GLMmodel* righthand = NULL;
+GLMmodel* lefthand = NULL;
+void drawbody(void)
 {
     if (!body) {
 	body = glmReadOBJ("data/body.obj");
@@ -35,45 +36,75 @@ void drawBody(void)
 	glmVertexNormals(body, 90.0);
     }
 
-    glmDraw(body, GLM_SMOOTH | GLM_TEXTURE);
+    glmDraw(body, GLM_SMOOTH | GLM_MATERIAL);
 }
-void drawmodel(void)
+
+
+void drawrightleg(void)
 {
-    if (!pmodel) {
-	pmodel = glmReadOBJ("data/Gundam.obj");
-	if (!pmodel) exit(0);
-	glmUnitize(pmodel);
-	glmFacetNormals(pmodel);
-	glmVertexNormals(pmodel, 90.0);
+    if (!rightleg) {
+	rightleg = glmReadOBJ("data/rightleg.obj");
+	if (!rightleg) exit(0);
+    glmScale(rightleg,1/15.0);
+
+	glmFacetNormals(rightleg);
+	glmVertexNormals(rightleg, 90.0);
     }
 
-    glmDraw(pmodel, GLM_SMOOTH | GLM_TEXTURE);
+    glmDraw(rightleg, GLM_SMOOTH | GLM_MATERIAL);
 }
-void drawUpperA(void)
+void drawleftleg(void)
 {
-    if (!upperA) {
-	upperA = glmReadOBJ("data/upperA.obj");
-	if (!upperA) exit(0);
-	glmUnitize(upperA);
-	glmFacetNormals(upperA);
-	glmVertexNormals(upperA, 90.0);
+    if (!leftleg) {
+	leftleg = glmReadOBJ("data/leftleg.obj");
+	if (!leftleg) exit(0);
+    glmScale(leftleg,1/15.0);
+
+	glmFacetNormals(leftleg);
+	glmVertexNormals(leftleg, 90.0);
     }
 
-    glmDraw(upperA, GLM_SMOOTH | GLM_TEXTURE);
+    glmDraw(leftleg, GLM_SMOOTH | GLM_MATERIAL);
 }
-void drawLowerA(void)
+void drawhead(void)
 {
-    if (!lowerA) {
-	lowerA = glmReadOBJ("data/lowerA.obj");
-	if (!lowerA) exit(0);
-	glmUnitize(lowerA);
-	glmFacetNormals(lowerA);
-	glmVertexNormals(lowerA, 90.0);
+    if (!head) {
+	head = glmReadOBJ("data/head.obj");
+	if (!head) exit(0);
+	glmUnitize(head);
+	glmFacetNormals(head);
+	glmVertexNormals(head, 90.0);
     }
 
-    glmDraw(lowerA, GLM_SMOOTH | GLM_TEXTURE);
+    glmDraw(head, GLM_SMOOTH | GLM_MATERIAL);
 }
-void myBody()
+void drawrighthand(void)
+{
+    if (!righthand) {
+	righthand = glmReadOBJ("data/righthand.obj");
+	if (!righthand) exit(0);
+    glmScale(righthand,1/15.0);
+
+	glmFacetNormals(righthand);
+	glmVertexNormals(righthand, 90.0);
+    }
+
+    glmDraw(righthand, GLM_SMOOTH | GLM_MATERIAL);
+}
+void drawlefthand(void)
+{
+    if (!lefthand) {
+	lefthand = glmReadOBJ("data/lefthand.obj");
+	if (!lefthand) exit(0);
+    glmScale(lefthand,1/15.0);
+
+	glmFacetNormals(lefthand);
+	glmVertexNormals(lefthand, 90.0);
+    }
+
+    glmDraw(lefthand, GLM_SMOOTH | GLM_MATERIAL);
+}
+void mybody()
 {
     glPushMatrix();
         glColor3f(1,0,0);
@@ -89,12 +120,17 @@ FILE * fin = NULL;
 FILE * fout = NULL;
 void motion(int x,int y)
 {
-    angleX[angleID] +=y - oldY;
-    angleY[angleID] -=x - oldX;
+    if(0){
+        teapotX+=(x-oldX)/150.0;
+        teapotY+=(x-oldY)/150.0;
+        printf("glTranslatef(%.3f,%.3f,0);\n",teapotX,teapotY);
+    }else{
+        angleX[angleID] +=y - oldY;
+        angleY[angleID] -=x - oldX;
+    }
     oldX=x;
     oldY=y;
     glutPostRedisplay();
-    ///將原來的motion()存檔剪下來
 }
 void mouse(int button ,int state ,int x,int y)
 {
@@ -183,25 +219,67 @@ void display()
     glPushMatrix();
         glRotatef(angleX[0],1,0,0);
         glRotatef(angleY[0],0,1,0);
-        drawBody();
+        drawbody();
     ///glutSolidSphere(0.1,30,30);
     glEnable(GL_TEXTURE_2D);
     glColor3f(1,1,1);
 
+
+    glPopMatrix();
     glPushMatrix();
-        glTranslatef(-0.1,0,0);
-        glRotatef(angleX[1],1,0,0);
-        glRotatef(angleY[1],0,1,0);
-        glTranslatef(0,-0.07,0);
-        drawUpperA();
-        glPushMatrix();
-                glTranslatef(-0.02,-0.09,0);
-                glRotatef(angleX[2],1,0,0);
-                glRotatef(angleY[2],0,1,0);
-                glTranslatef(0,-0.2,0);
-                drawLowerA();
-            glPopMatrix();
-        glPopMatrix();
+        glRotatef(angleX[0],1,0,0);
+        glRotatef(angleY[0],0,1,0);
+        glTranslatef(0,-1,0);
+        drawrightleg();
+    ///glutSolidSphere(0.1,30,30);
+    glEnable(GL_TEXTURE_2D);
+    glColor3f(1,1,1);
+
+
+    glPopMatrix();
+    glPushMatrix();
+        glRotatef(angleX[0],1,0,0);
+        glRotatef(angleY[0],0,1,0);
+        glTranslatef(0,-1,0);
+        drawleftleg();
+    ///glutSolidSphere(0.1,30,30);
+    glEnable(GL_TEXTURE_2D);
+    glColor3f(1,1,1);
+
+
+    glPopMatrix();
+    glPushMatrix();
+        glRotatef(angleX[0],1,0,0);
+        glRotatef(angleY[0],0,1,0);
+        glTranslatef(0,0.27,0);
+        drawhead();
+    ///glutSolidSphere(0.1,30,30);
+    glEnable(GL_TEXTURE_2D);
+    glColor3f(1,1,1);
+
+
+    glPopMatrix();
+    glPushMatrix();
+        glRotatef(angleX[0],1,0,0);
+        glRotatef(angleY[0],0,1,0);
+        glTranslatef(0,-1,0);
+        drawrighthand();
+    ///glutSolidSphere(0.1,30,30);
+    glEnable(GL_TEXTURE_2D);
+    glColor3f(1,1,1);
+
+
+    glPopMatrix();
+    glPushMatrix();
+        glRotatef(angleX[0],1,0,0);
+        glRotatef(angleY[0],0,1,0);
+        glTranslatef(0,-1,0);
+        drawlefthand();
+    ///glutSolidSphere(0.1,30,30);
+    glEnable(GL_TEXTURE_2D);
+    glColor3f(1,1,1);
+
+
     glPopMatrix();
     glutSwapBuffers();
 
@@ -232,7 +310,7 @@ int main(int argc,char*argv[])
     glutKeyboardFunc(keyboard);
    /// glutTimerFunc(0,timer,0);
 
-    myTexture("data/Diffuse.jpg");
+    ///myTexture("data/Diffuse.jpg");
 
     glEnable(GL_DEPTH_TEST);
     glDepthFunc(GL_LESS);
