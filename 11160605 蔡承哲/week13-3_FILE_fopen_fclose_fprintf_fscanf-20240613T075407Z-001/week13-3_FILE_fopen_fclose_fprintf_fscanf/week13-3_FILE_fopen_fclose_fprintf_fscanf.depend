@@ -1,0 +1,107 @@
+# depslib dependency file v1.0
+1717404743 source:c:\users\user\desktop\week13-3_file_fopen_fclose_fprintf_fscanf\glm.cpp
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<assert.h>
+	"glm.h"
+
+1717404743 c:\users\user\desktop\week13-3_file_fopen_fclose_fprintf_fscanf\glm.h
+	<GL/glut.h>
+
+1426320928 c:\users\user\desktop\freeglut\include\gl\glut.h
+	"freeglut_std.h"
+
+1426320928 c:\users\user\desktop\freeglut\include\gl\freeglut_std.h
+	<windows.h>
+	<EGL/egl.h>
+	<GLES/gl.h>
+	<GLES2/gl2.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<stdlib.h>
+
+1718137772 source:c:\users\user\desktop\week13-3_file_fopen_fclose_fprintf_fscanf\main.cpp
+	<opencv/highgui.h>
+	<opencv/cv.h>
+	<GL/glut.h>
+	<GL/glut.h>
+	"glm.h"
+	<stdio.h>
+
+1717404743 source:c:\users\administrator\downloads\week13-3_file_fopen_fclose_fprintf_fscanf-20240613t075407z-001\week13-3_file_fopen_fclose_fprintf_fscanf\glm.cpp
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<assert.h>
+	"glm.h"
+
+1717404743 c:\users\administrator\downloads\week13-3_file_fopen_fclose_fprintf_fscanf-20240613t075407z-001\week13-3_file_fopen_fclose_fprintf_fscanf\glm.h
+	<GL/glut.h>
+
+1426320928 c:\users\administrator\desktop\freeglut\include\gl\glut.h
+	"freeglut_std.h"
+
+1426320928 c:\users\administrator\desktop\freeglut\include\gl\freeglut_std.h
+	<windows.h>
+	<EGL/egl.h>
+	<GLES/gl.h>
+	<GLES2/gl2.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<stdlib.h>
+
+1718270036 source:c:\users\administrator\downloads\week13-3_file_fopen_fclose_fprintf_fscanf-20240613t075407z-001\week13-3_file_fopen_fclose_fprintf_fscanf\main.cpp
+	<opencv/highgui.h>
+	<opencv/cv.h>
+	<GL/glut.h>
+	<GL/glut.h>
+	"glm.h"
+	<stdio.h>
+
+1717404743 source:c:\users\user\desktop\week13-3_file_fopen_fclose_fprintf_fscanf-20240613t075407z-001\week13-3_file_fopen_fclose_fprintf_fscanf\glm.cpp
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<assert.h>
+	"glm.h"
+
+1717404743 c:\users\user\desktop\week13-3_file_fopen_fclose_fprintf_fscanf-20240613t075407z-001\week13-3_file_fopen_fclose_fprintf_fscanf\glm.h
+	<GL/glut.h>
+
+1718527086 source:c:\users\user\desktop\week13-3_file_fopen_fclose_fprintf_fscanf-20240613t075407z-001\week13-3_file_fopen_fclose_fprintf_fscanf\main.cpp
+	<opencv/highgui.h>
+	<opencv/cv.h>
+	<GL/glut.h>
+	<GL/glut.h>
+	"glm.h"
+	<windows.h>
+	<stdio.h>
+
+1717404743 source:c:\users\user\downloads\11160605 ½²©Ó­õ\week13-3_file_fopen_fclose_fprintf_fscanf-20240613t075407z-001\week13-3_file_fopen_fclose_fprintf_fscanf\glm.cpp
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<assert.h>
+	"glm.h"
+
+1717404743 c:\users\user\downloads\11160605 ½²©Ó­õ\week13-3_file_fopen_fclose_fprintf_fscanf-20240613t075407z-001\week13-3_file_fopen_fclose_fprintf_fscanf\glm.h
+	<GL/glut.h>
+
+1718532855 source:c:\users\user\downloads\11160605 ½²©Ó­õ\week13-3_file_fopen_fclose_fprintf_fscanf-20240613t075407z-001\week13-3_file_fopen_fclose_fprintf_fscanf\main.cpp
+	<opencv/highgui.h>
+	<opencv/cv.h>
+	<GL/glut.h>
+	<GL/glut.h>
+	"glm.h"
+	<windows.h>
+	<stdio.h>
+
