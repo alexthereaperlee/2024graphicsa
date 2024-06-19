@@ -1,0 +1,186 @@
+# depslib dependency file v1.0
+1718176643 source:c:\users\administrator\desktop\week13-3_file_fopen_fclose_fprintf_fscanf\glm.cpp
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<assert.h>
+	"glm.h"
+
+1718176643 c:\users\administrator\desktop\week13-3_file_fopen_fclose_fprintf_fscanf\glm.h
+	<GL/glut.h>
+
+1426320928 c:\users\administrator\desktop\freeglut\include\gl\glut.h
+	"freeglut_std.h"
+
+1426320928 c:\users\administrator\desktop\freeglut\include\gl\freeglut_std.h
+	<windows.h>
+	<EGL/egl.h>
+	<GLES/gl.h>
+	<GLES2/gl2.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<stdlib.h>
+
+1718192249 source:c:\users\administrator\desktop\week13-3_file_fopen_fclose_fprintf_fscanf\main.cpp
+	<opencv/highgui.h>
+	<opencv/cv.h>
+	<GL/glut.h>
+	<GL/glut.h>
+	"glm.h"
+	<stdio.h>
+
+1718176644 source:e:\week13-3_file_fopen_fclose_fprintf_fscanf\glm.cpp
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<assert.h>
+	"glm.h"
+
+1718176644 e:\week13-3_file_fopen_fclose_fprintf_fscanf\glm.h
+	<GL/glut.h>
+
+1718192250 source:e:\week13-3_file_fopen_fclose_fprintf_fscanf\main.cpp
+	<opencv/highgui.h>
+	<opencv/cv.h>
+	<GL/glut.h>
+	<GL/glut.h>
+	"glm.h"
+	<stdio.h>
+
+1718176644 source:e:\week13-3複製\glm.cpp
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<assert.h>
+	"glm.h"
+
+1718176644 e:\week13-3複製\glm.h
+	<GL/glut.h>
+
+1718192250 source:e:\week13-3複製\main.cpp
+	<opencv/highgui.h>
+	<opencv/cv.h>
+	<GL/glut.h>
+	<GL/glut.h>
+	"glm.h"
+	<stdio.h>
+
+1718176644 source:c:\users\administrator\desktop\week13-3複製\glm.cpp
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<assert.h>
+	"glm.h"
+
+1718176644 c:\users\administrator\desktop\week13-3複製\glm.h
+	<GL/glut.h>
+
+1718284290 source:c:\users\administrator\desktop\week13-3複製\main.cpp
+	<opencv/highgui.h>
+	<opencv/cv.h>
+	<GL/glut.h>
+	<GL/glut.h>
+	"glm.h"
+	<stdio.h>
+
+1718176644 source:c:\users\administrator\desktop\week13-3 期末作業(613) - 複製\glm.cpp
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<assert.h>
+	"glm.h"
+
+1718176644 c:\users\administrator\desktop\week13-3 期末作業(613) - 複製\glm.h
+	<GL/glut.h>
+
+1718360320 source:c:\users\administrator\desktop\week13-3 期末作業(613) - 複製\main.cpp
+	<opencv/highgui.h>
+	<opencv/cv.h>
+	<GL/glut.h>
+	<GL/glut.h>
+	"glm.h"
+	<stdio.h>
+
+1718176644 source:c:\users\administrator\desktop\week13-3 期末作業(614)最新\glm.cpp
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<assert.h>
+	"glm.h"
+
+1718176644 c:\users\administrator\desktop\week13-3 期末作業(614)最新\glm.h
+	<GL/glut.h>
+
+1718366755 source:c:\users\administrator\desktop\week13-3 期末作業(614)最新\main.cpp
+	<opencv/highgui.h>
+	<opencv/cv.h>
+	<GL/glut.h>
+	<GL/glut.h>
+	"glm.h"
+	<stdio.h>
+
+1718176644 source:c:\users\administrator\desktop\電圖期末作業(617)\glm.cpp
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<assert.h>
+	"glm.h"
+
+1718176644 c:\users\administrator\desktop\電圖期末作業(617)\glm.h
+	<GL/glut.h>
+
+1718620614 source:c:\users\administrator\desktop\電圖期末作業(617)\main.cpp
+	<opencv/highgui.h>
+	<opencv/cv.h>
+	<GL/glut.h>
+	<GL/glut.h>
+	"glm.h"
+	<stdio.h>
+
+1718176644 source:c:\users\administrator\desktop\電圖期末作業(617)備份\glm.cpp
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<assert.h>
+	"glm.h"
+
+1718176644 c:\users\administrator\desktop\電圖期末作業(617)備份\glm.h
+	<GL/glut.h>
+
+1718620616 source:c:\users\administrator\desktop\電圖期末作業(617)備份\main.cpp
+	<opencv/highgui.h>
+	<opencv/cv.h>
+	<GL/glut.h>
+	<GL/glut.h>
+	"glm.h"
+	<stdio.h>
+
+1718176644 source:c:\users\administrator\desktop\電圖期末作業(618)錯誤\glm.cpp
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<assert.h>
+	"glm.h"
+
+1718176644 c:\users\administrator\desktop\電圖期末作業(618)錯誤\glm.h
+	<GL/glut.h>
+
+1718718701 source:c:\users\administrator\desktop\電圖期末作業(618)錯誤\main.cpp
+	<opencv/highgui.h>
+	<opencv/cv.h>
+	<GL/glut.h>
+	<GL/glut.h>
+	"glm.h"
+	<stdio.h>
+
